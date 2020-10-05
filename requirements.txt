@@ -1,0 +1,9 @@
+aiohttp==3.6.2
+aiogram==2.9.2
+ujson==3.1.0
+aiodns==2.0.0
+envparse==0.2.0
+asyncpg==0.21.0
+beautifulsoup4==4.9.1
+requests==2.24.0
+APScheduler==3.6.3
