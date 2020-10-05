@@ -81,7 +81,7 @@ async def show_product(callback_query: CallbackQuery):
 
 @dp.message_handler(commands=['update'])
 async def update_product(message: Message):
-    if message.from_user.id != os.environ['ADMIN_ID']:
+    if str(message.from_user.id) != str(os.environ['ADMIN_ID']):
         await message.answer(text='Недоступно для тебя')
     else:
         await PriceTracking().run_update()
