@@ -8,7 +8,7 @@ class Database:
 
     @classmethod
     async def create_pool(cls):
-        cls.pool = await asyncpg.create_pool(dsn=os.environ['dsn'])
+        cls.pool = await asyncpg.create_pool(dsn=os.environ['DATABASE_URL'])
         return cls.pool
 
 
